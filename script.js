@@ -100,37 +100,31 @@ function validSocial(inputSocial) {
         message.innerText = "Numéro de sécurité sociale invalide";
         errors.splice(6, 1, 0);
     }
-    console.log(errors);
 }
 
 function showErrors() {
-    const name = document.getElementById("name");
-    const firstName = document.getElementById("firstname");
-    const age = document.getElementById("age");
-    const zip = document.getElementById("zip");
-    const mail = document.getElementById("email");
-    const passNumber = document.getElementById("passNumber");
-    const social = document.getElementById("socialNumber");
     if (errors[0] == 0) {
-        name.setAttribute("class", "invalid");
+        document.getElementById("name").setAttribute("class", "invalid");
     }
     if (errors[1] == 0) {
-        firstName.setAttribute("class", "invalid");
+        document.getElementById("firstname").setAttribute("class", "invalid");
     }
     if (errors[2] == 0) {
-        age.setAttribute("class", "invalid");
+        document.getElementById("age").setAttribute("class", "invalid");
     }
     if (errors[3] == 0) {
-        zip.setAttribute("class", "invalid");
+        document.getElementById("zip").setAttribute("class", "invalid");
     }
     if (errors[4] == 0) {
-        mail.setAttribute("class", "invalid");
+        document.getElementById("email").setAttribute("class", "invalid");
     }
     if (errors[5] == 0) {
-        passNumber.setAttribute("class", "invalid");
+        document.getElementById("passNumber").setAttribute("class", "invalid");
     }
     if (errors[6] == 0) {
-        social.setAttribute("class", "invalid");
+        document
+            .getElementById("socialNumber")
+            .setAttribute("class", "invalid");
     }
 }
 
@@ -163,8 +157,16 @@ form.socialNumber.addEventListener("input", function () {
 });
 
 form.addEventListener("submit", function (e) {
+    const passDeliver = document.querySelector("#passDeliver").value;
+    const passValidity = document.querySelector("#passValidity").value;
     if (errors.includes(0)) {
         e.preventDefault();
         showErrors();
+    }
+    if (passValidity < passDeliver) {
+        e.preventDefault();
+        alert(
+            "La date de validité de votre passeport ne peut être supérieure à sa date de délivrance"
+        );
     }
 });

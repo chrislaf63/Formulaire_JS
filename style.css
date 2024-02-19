@@ -4,26 +4,37 @@
     box-sizing: border-box;
 }
 
-h1 {
-    text-align: center;
+body {
+    background: center url("img/vue-floue-du-couloir-plantes.jpg");
 }
+
+h1 {
+    font-family: "Anton", sans-serif;
+    text-align: center;
+    padding-block: 15px;
+}
+
+legend {
+    font-family: "Anton", sans-serif;
+    margin-left: 10px;
+}
+
 label {
+    font-family: "Protest Riot", sans-serif;
     display: block;
     margin-bottom: 5px;
 }
 
-legend {
-    margin-left: 10px;
-}
 fieldset {
     width: 700px;
     display: flex;
     justify-content: center;
     padding-block: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     margin-left: calc(50vw - 350px);
     margin-right: calc(50vw - 350px);
     border-radius: 10px;
+    background-color: rgba(201, 200, 200, 0.6);
 }
 
 .fieldRight {
@@ -40,6 +51,7 @@ input[type="submit"] {
     width: 150px;
     margin-left: calc(50vw - 75px);
     margin-right: calc(50vw - 75px);
+    margin-bottom: 10px;
 }
 
 select {
