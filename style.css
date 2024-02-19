@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+legend {
+    margin-left: 10px;
+}
+fieldset {
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    padding-block: 15px;
+    margin-bottom: 30px;
+    margin-left: calc(50vw - 350px);
+    margin-right: calc(50vw - 350px);
+    border-radius: 10px;
+}
+
+.fieldRight {
+    margin-left: 35px;
+}
+
+input {
+    width: 250px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    width: 150px;
+    margin-left: calc(50vw - 75px);
+    margin-right: calc(50vw - 75px);
+}
+
+select {
+    padding: 5px;
+    width: 250px;
+}
