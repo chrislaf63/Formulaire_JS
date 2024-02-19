@@ -16,10 +16,11 @@
                     <legend>Vous</legend>
                     <div class="fields">
                         <label for="name">Nom</label>
-                        <input type="text" name="name" id="name" /><br /><br />
+                        <input type="text" name="name" id="name" /><br />
+                        <small class="message1"></small><br /><br />
                         <label for="age">Age</label>
-                        <input type="text" name="age" id="age" /><br /><br />
-
+                        <input type="text" name="age" id="age" /><br />
+                        <small class="message3"></small><br /><br />
                         <label for="country">Pays de naissance</label>
                         <input
                             type="text"
@@ -42,13 +43,11 @@
                             type="text"
                             name="firstname"
                             id="firstname"
-                        /><br /><br />
+                        /><br />
+                        <small class="message2"></small><br /><br />
                         <label for="birth">Date de naissance</label>
-                        <input
-                            type="date"
-                            name="birth"
-                            id="birth"
-                        /><br /><br />
+                        <input type="date" name="birth" id="birth" /><br />
+                        <small></small><br /><br />
                         <label for="nationality">Nationalité</label>
                         <select name="job" id="job">
                             <option value="french" selected>Française</option>
@@ -71,21 +70,16 @@
                     <legend>Vos Coordonnées</legend>
                     <div>
                         <label for="adress">Votre Adresse</label>
-                        <input
-                            type="text"
-                            name="adress"
-                            id="adress"
-                        /><br /><br />
+                        <input type="text" name="adress" id="adress" /><br />
+                        <small></small><br /><br />
                         <label for="zip">Code postal</label>
-                        <input type="text" name="zip" id="zip" /><br /><br />
+                        <input type="text" name="zip" id="zip" /><br />
+                        <small class="message4"></small><br /><br />
                     </div>
                     <div class="fieldRight">
                         <label for="email">Email</label>
-                        <input
-                            type="email"
-                            name="email"
-                            id="email"
-                        /><br /><br />
+                        <input type="email" name="email" id="email" /><br />
+                        <small class="message5"></small><br /><br />
                         <label for="town">Ville</label>
                         <input type="text" name="town" id="town" /><br /><br />
                     </div>
@@ -98,7 +92,8 @@
                             type="text"
                             name="passNumber"
                             id="passNumber"
-                        /><br /><br />
+                        /><br />
+                        <small class="message6"></small><br /><br />
                         <label for="passDeliver"
                             >Date de délivrance du passeport</label
                         >
@@ -116,7 +111,8 @@
                             type="text"
                             name="socialNumber"
                             id="socialNumber"
-                        /><br /><br />
+                        /><br />
+                        <small class="message7"></small><br /><br />
                         <label for="passValidity"
                             >Date de validité du passeport</label
                         >
@@ -130,5 +126,6 @@
                 <input type="submit" value="Valider mes réponses" />
             </form>
         </main>
+        <script src="script.js"></script>
     </body>
 </html>
